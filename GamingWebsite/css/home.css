@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+html, body {
+    height: 90%;
+  
+}
+
+body {
+    background-image: url(/img/test.gif);
+    background-size:cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+	margin-bottom: 200px;
+   
+   
+}
+
+
+nav {
+	width: 100%;
+	padding: 10px 0;
+	z-index: 12;
+}
+
+nav .menu {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+.menu .logo img {
+	width: 250px;
+	margin-left: -50px;
+	height: 100px;
+}
+
+.menu ul li {
+	list-style: none;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 8px 15px;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+	background-image: linear-gradient(to right, #ff0628af ,#a82c5ed3, #ffffff);
+	color: #000;
+}
+
+.NavBtns button {
+	height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    border: 2px solid #a82c5ed3;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    color: rgba(255, 255, 255, 0.827);
+    background: transparent;
+}
+
+.NavBtns button:hover {
+    background-image: linear-gradient(to right,  #ff0628af ,#a82c5ed3, #ffffff);
+    color: #ffffff;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.container {
+	width: 1200px;
+	height: 85%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.InnerDiv {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    width: 54%;
+}
+
+.center .title {
+    color: #fff;
+    font-size: 70px;
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+.center .sub_des {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500; 
+    margin: 11px 0 25px 0;
+}
+
+.center .btns button {
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    background-image: linear-gradient(to right, #5a0b7c, #ff4992, #630000);
+    color: #ffffff;
+    position: relative;
+    
+    box-shadow: 0 0 5px rgb(71, 1, 101), 0 0 10px rgba(52, 152, 219, 0.7), 0 0 15px rgba(255, 0, 255, 0.7);
+    animation: neonGlow 0.01s infinite alternate;
+}
+
+/* Neon glow animation */
+@keyframes neonGlow {
+    from {
+        box-shadow: 0 0 5px rgba(142, 68, 173, 0.7), 0 0 10px rgb(69, 13, 67), 0 0 15px rgba(255, 0, 255, 0.7);
+    }
+    to {
+        box-shadow: 0 0 10px rgba(142, 68, 173, 0.7), 0 0 15px rgb(121, 1, 49), 0 0 20px rgba(3, 133, 133, 0.7);
+    }
+}
+
+
+.center .btns button:hover {
+    border: 2px solid #ffffffd3;
+    color: #ffffff;
+    background: transparent;
+}
+
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: normal;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+.MobNavBtns button {
+	display: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    color: #ffffff;
+	background-image: linear-gradient(to right,  #710035 ,#80143fcd, #3b1b4d ,#43183d);
+    border: none;
+}
+
+/* Responsive Media Query */
+@media (min-width: 1200px){
+	.menu ul {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1200px){
+	body {
+		background-image: url(/img/test.gif);
+	}
+	
+	.menu ul li {
+		margin-left: 7px;
+		text-align: left;
+		padding-left: 60px;
+	}
+
+	li .MobNavBtns {
+		padding: 0 15px;
+	}
+
+	.MobNavBtns button {
+		display: block;
+		padding : 0 10px;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.NavBtns {
+		display: none;
+	}
+
+	.checkbtn{
+		display: block;
+	}
+
+	.center .title {
+		font-size: 38px;
+	}
+
+	.center {
+		width: 100%;
+	}
+
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background-image: linear-gradient(to right,  #713668af ,#5e273dd3, #ffffff69);
+		top: 0;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	nav ul li{
+		display: block;
+		margin: 20px 0;
+	}
+	
+	nav ul li a{
+		font-size: 20px;
+	}
+	
+	a:hover,a.active{
+		background: none;
+		color: #ff82d1;
+	}
+	
+	#check:checked ~ ul{
+		left: -50px;
+	}
+}
+
+
+.footer {
+    background-image: url(/img/formblur.gif);
+    background-size: cover; 
+    padding: 20px 10px; 
+    text-align: center; 
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px; 
+    border-radius: 50%;
+    animation: neonGlow 0.5s infinite alternate; /* Added neon glow animation */
+}
+
+.socialIcons a i {
+    font-size: 1.5em; /* Reduced icon size */
+    color: transparent; /* Hide original icon color */
+    background-image: linear-gradient(45deg, #e19aff, #3498db, #f170f1); /* Neon gradient with cyberpunk colors */
+    -webkit-background-clip: text; /* Clip text to background */
+    background-clip: text; /* Clip text to background */
+    animation: neonGlow 0.1s infinite alternate; /* Neon glow animation */
+}
+
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 5px rgba(142, 68, 173, 0.7), 0 0 10px rgba(52, 152, 219, 0.7), 0 0 15px rgba(255, 0, 255, 0.7);
+    }
+    to {
+        text-shadow: 0 0 10px rgba(142, 68, 173, 0.7), 0 0 15px rgba(52, 152, 219, 0.7), 0 0 20px rgba(255, 0, 255, 0.7);
+    }
+}
+
+.socialIcons a:hover {
+    animation-play-state: paused; 
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li {
+    margin: 0 10px;
+}
+
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+
+.footerBottom {
+	background-image: linear-gradient(to right,  #36001b ,#853358, #481c4c);
+    padding: 5px;
+}
+
+.footerBottom p {
+    color: white;
+    margin: 5px 0; /* Adjusted margin */
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px; /* Adjusted margin */
+}
+
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .socialIcons a {
+        padding: 6px;
+        margin: 3px; 
+    }
+}

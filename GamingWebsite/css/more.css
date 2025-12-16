@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+body {
+    
+    background-image: url('/img/test.gif');
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  
+}
+
+.container {
+    width: 1000%;
+   margin-top: -150px;
+   margin-left: 1000px;
+    margin-left: -17rem;
+    max-width: 1000px;
+   
+}
+
+.title {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px cyan; /* Neon light effect */
+    animation: neon-glow 0.1s infinite alternate; /* Neon glow animation */
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.par{
+    color: #ffffff;
+}
+.neon {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px cyan;
+    text-shadow: 0 0 10px cyan; /* Neon light effect */
+    animation: neon-glow 0.1s infinite alternate; /* Neon glow animation */
+}
+
+@keyframes neon-glow {
+    from {
+        text-shadow: 0 0 5px rgba(142, 68, 173, 0.7), 0 0 10px rgba(52, 152, 219, 0.7), 0 0 15px rgba(255, 0, 255, 0.7);
+    }
+    to {
+        text-shadow: 0 0 10px rgba(142, 68, 173, 0.7), 0 0 15px rgba(52, 152, 219, 0.7), 0 0 20px rgba(255, 0, 255, 0.7);
+    }
+}
+.footer {
+   
+    background-size: cover; 
+    margin-top: -100px;
+    text-align: center; 
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px; 
+    border-radius: 50%;
+    animation: neonGlow 0.5s infinite alternate; z
+}
+
+.socialIcons a i {
+    font-size: 1.5em; /* Reduced icon size */
+    color: transparent; /* Hide original icon color */
+    background-image: linear-gradient(45deg, #e19aff, #3498db, #f170f1); /* Neon gradient with cyberpunk colors */
+    -webkit-background-clip: text; /* Clip text to background */
+    background-clip: text; /* Clip text to background */
+    animation: neonGlow 0.1s infinite alternate; /* Neon glow animation */
+}
+
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 5px rgba(142, 68, 173, 0.7), 0 0 10px rgba(52, 152, 219, 0.7), 0 0 15px rgba(255, 0, 255, 0.7);
+    }
+    to {
+        text-shadow: 0 0 10px rgba(142, 68, 173, 0.7), 0 0 15px rgba(52, 152, 219, 0.7), 0 0 20px rgba(255, 0, 255, 0.7);
+    }
+}
+
+.socialIcons a:hover {
+    animation-play-state: paused; 
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li {
+    margin: 0 10px;
+}
+
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+
+.footerBottom {
+	background-image: linear-gradient(to right,  #36001b ,#853358, #481c4c);
+    padding: 5px;
+}
+
+.footerBottom p {
+    color: white;
+    margin: 5px 0; /* Adjusted margin */
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px; zzz
+}
+
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .socialIcons a {
+        padding: 6px;
+        margin: 3px; 
+    }
+}
+.logo img {
+  width: 250px;
+	margin-left: -450px;
+	height: 100px;
+  margin-bottom: 80px;
+}
